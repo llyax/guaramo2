@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rede de apoio a pessoas migrantes e refugiadas em Brasília, no Distrito Federal." data-i18n-content="description">
+  <title data-i18n-title="culture">Cultura | Guaramo Solidário</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <script src="./gestao.js" defer></script>
+</head>
+<body>
+  <a href="#conteudo" class="skip-link" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./index.html">
+        <img src="./assets/logo.png" alt="Logo Guaramo Solidário" data-i18n-alt="logo" width="56" height="44">
+        <span aria-hidden="true">Guaramo Solidário</span>
+      </a>
+      <!-- Os botões aparecem quando o script de tradução está pronto. -->
+      <div class="languages" role="group" aria-label="Idioma" data-i18n-label="language" hidden>
+        <button type="button" lang="pt-BR" data-lang="pt" aria-pressed="true">Português</button>
+        <button type="button" lang="es" data-lang="es" aria-pressed="false">Español</button>
+      </div>
+      <nav aria-label="Navegação principal" data-i18n-label="nav">
+        <a href="./index.html" data-i18n="home">Início</a>
+        <a href="./migrantes.html" data-i18n="migrant-nav">Para migrantes</a>
+        <a href="./voluntarios.html" data-i18n="volunteer-path">Quero ser voluntário</a>
+        <a href="./ajudar.html" data-i18n="partner">Quero apoiar a rede</a>
+        <a href="./cultura.html" aria-current="page" data-i18n="culture">Cultura</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="wrap section subpage">
+      <h1 data-i18n="culture">Cultura</h1>
+      <p class="intro" data-i18n="culture-intro">Um espaço para compartilhar pinturas, músicas, poemas e outras criações da comunidade em Brasília.</p>
+
+      <p class="demo" data-i18n="fictitious-public">As obras desta seleção são ilustrativas.</p>
+      <div class="cards">
+        <article class="card"><p class="overline" data-i18n="painting">Pintura digital</p><h2 data-i18n="painting-title">Entre caminhos</h2><div class="artwork" role="img" aria-label="Formas em vermelho, dourado e azul criam a silhueta de um caminho entre montanhas." data-i18n-label="painting-alt"><span></span></div><p data-i18n="painting-text">Composição abstrata inspirada em travessias e encontros.</p></article>
+        <article class="card"><p class="overline" data-i18n="music">Música instrumental</p><h2 data-i18n="music-title">Um novo passo</h2><p data-i18n="music-text">Pequena peça instrumental com uma melodia sobre acordes suaves.</p>
+          <audio controls preload="none" src="./assets/um-novo-passo.wav" aria-label="Um novo passo" data-i18n-label="music-title"></audio>
+          <a class="text-link" href="./assets/um-novo-passo.wav" download data-i18n="music-download">Baixar faixa (WAV)</a></article>
+        <article class="card"><p class="overline" data-i18n="poem">Poema</p><h2 data-i18n="poem-title">A casa que levo</h2>
+          <blockquote class="poem"><p data-i18n="verse-one">Levo a casa nas palavras que aprendi.</p><p data-i18n="verse-two">Na cidade nova, uma voz me chama.</p><p data-i18n="verse-three">Abro a porta e guardo mais um nome.</p></blockquote></article>
+      </div>
+      <a class="button primary" href="#enviar-obra" data-i18n="exhibit">Quero propor uma exposição</a>
+      <aside class="card stack" aria-label="Correio Braziliense">
+        <p data-i18n="press-culture">Em uma roda de conversa retratada pelo Correio Braziliense em 2021, Damelis Castillo tocou cuatro venezuelano e cantou Caramba e Asa Branca. O encontro reuniu música da Venezuela e do Brasil.</p>
+        <a class="text-link" href="./index.html#historia-da-rede" data-i18n="press-internal">Conhecer a história da rede</a>
+      </aside>
+      <a href="./eventos.html" class="button" data-i18n="circles-link">Acompanhar a agenda</a>
+      <section class="stack" aria-labelledby="obras-da-rede">
+        <h2 id="obras-da-rede" data-i18n="published-arts">Obras da comunidade</h2>
+        <div id="arts-public" class="cards"></div>
+      </section>
+      <section class="stack" id="enviar-obra">
+        <h2 data-i18n="submit-art">Enviar obra para avaliação</h2><p class="section-copy" data-i18n="art-note">Envie um poema no campo de texto ou indique o link HTTPS de uma pintura ou música. Use obras que você pode compartilhar. O envio fica neste navegador até a equipe configurar o recebimento online.</p>
+        <form class="card form-card" id="art-form" hidden>
+          <div class="cv-field"><label for="art-title" data-i18n="art-title">Título da obra</label><input id="art-title" name="title" maxlength="100" required></div>
+          <div class="cv-field"><label for="art-author" data-i18n="art-author">Nome artístico</label><input id="art-author" name="author" maxlength="80" required></div>
+          <div class="cv-field"><label for="art-kind" data-i18n="art-kind">Tipo de obra</label><select id="art-kind" name="kind"><option value="art-paint" data-i18n="art-paint">Pintura ou arte visual</option><option value="art-music" data-i18n="art-music">Música</option><option value="art-poem" data-i18n="art-poem">Poema</option><option value="art-other" data-i18n="art-other">Outra obra</option></select></div>
+          <div class="cv-field"><label for="art-description" data-i18n="art-content">Texto ou descrição da obra</label><textarea id="art-description" name="description" rows="5" maxlength="2500"></textarea></div>
+          <div class="cv-field"><label for="art-url" data-i18n="art-url">Link HTTPS para a obra</label><input id="art-url" name="url" type="url" maxlength="600"></div>
+          <button type="submit" class="button primary" data-i18n="submit-art">Enviar obra para avaliação</button>
+        </form><p id="art-status" class="status" role="status"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <strong>Guaramo Solidário</strong>
+      <p data-i18n="footer">Rede de acolhimento em Brasília, DF</p>
+      <div class="footer-links">
+        <a href="./eventos.html" class="text-link" data-i18n="events">Eventos</a>
+        <a href="./contatos.html" class="text-link" data-i18n="contacts">Contatos</a>
+        <a href="./admin.html" class="text-link" data-i18n="admin">Administração</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+

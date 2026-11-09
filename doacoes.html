@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rede de apoio a pessoas migrantes e refugiadas em Brasília, no Distrito Federal." data-i18n-content="description">
+  <title data-i18n-title="donations">Doações | Guaramo Solidário</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <script src="./community.js" defer></script>
+</head>
+<body>
+  <a href="#conteudo" class="skip-link" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="./index.html">
+        <img src="./assets/logo.png" alt="Logo Guaramo Solidário" data-i18n-alt="logo" width="56" height="44">
+        <span aria-hidden="true">Guaramo Solidário</span>
+      </a>
+      <!-- Os botões aparecem quando o script de tradução está pronto. -->
+      <div class="languages" role="group" aria-label="Idioma" data-i18n-label="language" hidden>
+        <button type="button" lang="pt-BR" data-lang="pt" aria-pressed="true">Português</button>
+        <button type="button" lang="es" data-lang="es" aria-pressed="false">Español</button>
+      </div>
+      <nav aria-label="Navegação principal" data-i18n-label="nav">
+        <a href="./index.html" data-i18n="home">Início</a>
+        <a href="./migrantes.html" data-i18n="migrant-nav">Para migrantes</a>
+        <a href="./voluntarios.html" data-i18n="volunteer-path">Quero ser voluntário</a>
+        <a href="./ajudar.html" data-i18n="partner">Quero apoiar a rede</a>
+        <a href="./cultura.html" data-i18n="culture">Cultura</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="wrap section subpage">
+      <h1 data-i18n="donations">Doações</h1>
+      <p class="intro" data-i18n="donation-copy">A rede organiza a coleta e a distribuição de itens em Brasília. Consulte as categorias e acompanhe a situação dos pontos de apoio.</p>
+
+      <div class="cards">
+        <article class="card stock">
+          <span class="stock-number" aria-hidden="true">01</span>
+          <h2 data-i18n="clothes">Roupas de frio</h2>
+          <p data-i18n="clothes-copy">Casacos, moletons e mantas limpas.</p>
+
+        </article>
+        <article class="card stock">
+          <span class="stock-number" aria-hidden="true">02</span>
+          <h2 data-i18n="food">Cestas básicas</h2>
+          <p data-i18n="food-copy">Arroz, feijão, óleo e leite em pó lacrados.</p>
+
+        </article>
+        <article class="card stock">
+          <span class="stock-number" aria-hidden="true">03</span>
+          <h2 data-i18n="toys">Brinquedos educativos</h2>
+          <p data-i18n="toys-copy">Livros infantis, jogos e brinquedos completos.</p>
+
+        </article>
+        <article class="card stock"><h2 data-i18n="school">Material escolar</h2><p data-i18n="school-copy">Cadernos, lápis, canetas e mochilas em bom estado.</p></article>
+        <article class="card stock"><h2 data-i18n="craft">Materiais de artesanato</h2><p data-i18n="craft-copy">Tecidos, linhas, papéis e materiais para oficinas criativas.</p></article>
+      </div>
+
+      <section class="stack" id="estoque" aria-labelledby="estoque-titulo">
+        <h2 id="estoque-titulo" data-i18n="inventory-public">Estoque por ponto de apoio</h2>
+        <p class="section-copy" data-i18n="inventory-note">Os endereços e horários dos cinco pontos serão divulgados após confirmação. As quantidades abaixo são ilustrativas e não indicam disponibilidade para retirada.</p>
+        <div id="inventory" class="cards"></div>
+        <noscript><p data-i18n="stock-js">Ative o JavaScript para consultar o estoque por ponto.</p></noscript>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <strong>Guaramo Solidário</strong>
+      <p data-i18n="footer">Rede de acolhimento em Brasília, DF</p>
+      <div class="footer-links">
+        <a href="./eventos.html" class="text-link" data-i18n="events">Eventos</a>
+        <a href="./contatos.html" class="text-link" data-i18n="contacts">Contatos</a>
+        <a href="./admin.html" class="text-link" data-i18n="admin">Administração</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
